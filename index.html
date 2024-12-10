@@ -6,7 +6,7 @@
     <title>Abhishek Kamble - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -14,38 +14,66 @@
             background: #f4f4f4;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 30px auto;
             background: #fff;
-            padding: 20px;
+            padding: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2, h3 {
             color: #444;
+            font-weight: bold;
         }
         ul {
             list-style-type: disc;
             padding-left: 20px;
+            margin: 10px 0;
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .company-period {
             font-style: italic;
             color: #777;
+        }
+        p {
+            margin: 5px 0;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .contact-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .contact-info strong {
+            color: #333;
+        }
+        .technical-skills ul {
+            column-count: 2;
+        }
+        .technical-skills li {
+            margin-bottom: 10px;
+        }
+        .separator {
+            border-top: 1px solid #ddd;
+            margin: 30px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Abhishek Anil Kamble</h1>
-        <p><strong>Phone:</strong> 9594321335 | <strong>Email:</strong> aabhishekdevops@gmail.com</p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/abhishek-kamble-06b916136" target="_blank">linkedin.com/in/abhishek-kamble-06b916136</a></p>
-        
-        <div class="section">
+        <div class="contact-info">
+            <p><strong>Phone:</strong> <a href="tel:+919594321335">9594321335</a> | <strong>Email:</strong> <a href="mailto:aabhishekdevops@gmail.com">aabhishekdevops@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/abhishek-kamble-06b916136" target="_blank">linkedin.com/in/abhishek-kamble-06b916136</a></p>
+        </div>
+
+        <div class="section technical-skills">
             <h2>Technical Skills</h2>
             <ul>
-                <li><strong>Technologies:</strong> Git, Jenkins</li>
+                <li><strong>Technologies:</strong> Git, Jenkins, Terraform, Ansible, Kubernetes</li>
                 <li><strong>Databases:</strong> MySQL, Redis, MongoDB</li>
                 <li><strong>Servers:</strong> Apache, Nginx</li>
                 <li><strong>System Administration:</strong> Linux (Ubuntu, CentOS), Windows</li>
@@ -54,6 +82,8 @@
                 <li><strong>Containerization & Orchestration:</strong> Docker, Kubernetes</li>
             </ul>
         </div>
+
+        <div class="separator"></div>
 
         <div class="section">
             <h2>Work Experience</h2>
@@ -66,14 +96,14 @@
                 <li>Installed, configured, and maintained Linux systems and SSL certificates on Nginx, ensuring secure HTTPS connections for web applications.</li>
                 <li>Set up and configured MySQL servers and RDS instances, ensuring efficient database performance and high availability.</li>
             </ul>
-            
+
             <h3>DevOps Engineer at Alten Clasoft Labs <span class="company-period">(May 2023 - Dec 2023)</span></h3>
             <ul>
                 <li>Managed and monitored ELK dashboards and configured monitoring rules in Jio Observability.</li>
                 <li>Handled instance cancellations and queue deletions on SMM servers.</li>
             </ul>
-            
-            <h3>DevOps Engineer at Fyntune <span class="company-period">(August 2020 - May 2023)</span></h3>
+
+            <h3>DevOps Engineer at Fyntune <span class="company-period">(Aug 2020 - May 2023)</span></h3>
             <ul>
                 <li>Designed and maintained fully automated CI/CD pipelines using Jenkins, reducing manual tasks by 70%.</li>
                 <li>Managed Git repositories, including branching strategies and user account management.</li>
@@ -85,8 +115,10 @@
             </ul>
         </div>
 
+        <div class="separator"></div>
+
         <div class="section">
-            <h2>Educational Credentials</h2>
+            <h2>Education</h2>
             <p><strong>B.E. in Information Technology:</strong> A.C. Patil College of Engineering</p>
         </div>
     </div>
