@@ -8,75 +8,110 @@ body {
 /* Header */
 header {
     text-align: center;
-    padding: 30px 20px;
-    background: #ffffff;
-    color: #000000;
+    padding: 15px 10px;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 14px;
+    margin: 3px 0;
 }
 
 /* Links */
+.links {
+    margin-top: 5px;
+}
+
 .links a {
-    margin: 0 10px;
+    margin: 0 8px;
     color: #000000;
     text-decoration: none;
     font-weight: bold;
-}
-
-.links a:hover {
-    text-decoration: underline;
-}
-
-/* Button */
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 8px 15px;
-    border: 1px solid #000000;
-    background: #ffffff;
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background: #000000;
-    color: #ffffff;
 }
 
 /* Sections */
 section {
     max-width: 900px;
     margin: auto;
-    padding: 20px;
-    margin-bottom: 25px;
-    line-height: 1.6;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    line-height: 1.4;
 }
 
 /* Headings */
-h1, h2, h3 {
-    color: #000000;
+h1 {
+    margin: 5px 0;
 }
 
 h2 {
     border-bottom: 1px solid #000000;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    margin: 8px 0 2px;
 }
 
 /* Dates */
 .date {
-    font-size: 14px;
-    color: #000000;
+    font-size: 12px;
+    margin-bottom: 3px;
 }
 
 /* Lists */
 ul {
-    padding-left: 20px;
+    padding-left: 18px;
+    margin: 3px 0;
+}
+
+li {
+    margin-bottom: 4px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
-    background: #ffffff;
-    color: #000000;
+    padding: 8px;
     border-top: 1px solid #000000;
+    font-size: 12px;
+}
+
+/* ---------- PRINT OPTIMIZATION ---------- */
+@media print {
+
+    body {
+        font-size: 11px;
+    }
+
+    header {
+        text-align: left;
+        padding: 5px 0;
+    }
+
+    section {
+        padding: 5px 0;
+        margin-bottom: 5px;
+        page-break-inside: avoid;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    li {
+        margin-bottom: 2px;
+    }
+
+    footer {
+        display: none;
+    }
 }
